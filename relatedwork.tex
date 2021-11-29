@@ -63,15 +63,38 @@ These are questions that commonly arise as developers perform change tasks
 on their code.
 
 \par Researchers have conducted studies that investigate both the 
-\emph{frequency} and \emph{difficulty} of these focused questions that 
-developers ask during change tasks. 
+frequency and difficulty of these focused questions that developers ask during 
+change tasks.
 LaToza et al. found that a significant portion of a developer's work involves 
 answering \emph{reachability questions}, which are defined as a search across 
 feasible paths through a program for target statements matching search criteria 
 \cite{latoza-2010-reach}.
+In a survey distributed to 2000 developers employed at Microsoft's Redmond
+campus, 460 developers reported asking questions that could be phrased as 
+reachability questions more than 9 times a day.
+Of the developers who responded, 82\% of them rated one or more of the
+reachability questions as at least somewhat hard to answer.
+\cite{latoza-2010-reach}.
+Not only are reachability questions difficult to answer, but they are also
+time-consuming.
+A field study of 17 developers found that of the 10 longest activities
+undertaken by devevlopers, 9 were associated with reachability questions
+\cite{latoza-2010-reach}.
+
+% TODO: does feel a little weird to end here; should tie it up, somehow.
 
 \section{Tools that Support Developer Questions}
 \label{sec:ToolsSupportDeveloperQuestions}
+
+\noindent Different approaches have been taken to building tools 
+that enable developers to answer questions about their code.
+Some tools such as \emph{Whyline} present a more passive approach,
+presenting developers with a subset of pre-defined questions and answers 
+they may choose to investigate after runtime \cite{ko-2004-whyline}.
+Other tools present a more active approach; the \emph{GetMeHere} tool developed
+at Microsoft Research enables developers to form their own queries about
+the behaviour of their programs, and provides answers to them without needing
+an explicit execution trace \cite{barnett-2014-get}.
 
 \endinput
 
