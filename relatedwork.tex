@@ -31,9 +31,34 @@ understanding the systems they wrangle each day.
 The size, complexity, and indirection that is becoming commonplace in systems
 today \cite{latoza-2010-reach} are pushing the already-elusive goal of
 enabling developers to more easily enderstand their code into new and 
-uncharted territories.
+uncharted territories. However, this is not an impossible goal.
 
-\par However, this is not an impossible goal.
+\section{Questions that Developers Ask}
+\label{sec:QuestionsThatDeveloperAsk}
+
+\noindent Developers have a large number of information needs that must be
+addressed during their day-to-day workflows.
+These information needs often present themselves as a variety of questions
+that require the integration of often-disparate sources of information
+\cite{fritz-2010-info-frag}.
+For example, to understand how a defect was introduced, a developer may have to
+read the source code of a program, find additional context within a bug report
+or a project tracker, or resort to speaking to other developers who may have 
+more information. 
+
+\par Other questions that developers may ask are more focused, and may involve
+querying only one source of information, such as a single program or a
+collection of modules in a system.
+As developers work to evolve and understand specific parts of their systems,
+they may ask themselves: "where are instances of this class created?" or
+"what data can we access from this object?" as they try to discover entities
+and relationships that capture incoming connections to a given entity
+\cite{sillito-2006-questions-during-task}.
+Additional questions that developers may ask could be related to 
+the control-flow or the data-flow through a program, such as 
+"why isn't control reaching this point in code?" and 
+"what parts of this data structure are being accessed in this code?" 
+\cite{sillito-2006-questions-during-task}.
 
 \endinput
 
