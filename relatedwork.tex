@@ -96,6 +96,33 @@ at Microsoft Research enables developers to form their own queries about
 the behaviour of their programs, and provides answers to them without needing
 an explicit execution trace \cite{barnett-2014-get}.
 
+\par The Whyline was initially developed as an interogative debugging interface
+for the Alice programming language, and later augmented to support the Java
+programming language and the needs of professional developers.
+At a high-level, Whyline enaables developers to select questions about a
+program's output, and it then helps developers to work backfrom from output
+to its causes \cite{ko-2009-java-whyline}.
+These questions about program output are phrased as "why did" and "why didn't"
+queries about the values in a program. 
+For example, consider a case when a variable \texttt{foo} is being erroneously 
+set to some value \textit{x}.
+A developer could choose to investigate the cause of this erroneous program
+behaviour by running the program, opening the Whyline window and selecting
+"why did \texttt{foo} $=$ \textit{x}?" and a \emph{temporal context}, which is 
+ a specified time-frame that they wish to investigate.
+The Whyline then presents a view of all statments of the program within the
+temporal context that contributed to the line where \texttt{foo} has the value
+\textit{x}. 
+Whyline's approach of presenting a pre-defined subset of questions about the 
+output of programs is beneficial, as it avoid speculation about the causes of
+a failure, and simplifies the exploration of code responsible for the output
+\cite{ko-2009-java-whyline}.
+An experiment was conducted to evaluate the efficacy of Whyline on isolating the
+causes of two bug reports from an open source projects.
+It was found that Whyline users were successful about three times as often
+and about twice as fast compared to the control group who used conventional'
+debugging tools and techniques.
+
 \endinput
 
 Sillito paper shows that developers often select the incorrect tool/are not
