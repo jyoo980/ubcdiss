@@ -31,7 +31,7 @@ understanding the systems they wrangle each day.
 The size, complexity, and indirection that is becoming commonplace in systems
 today \cite{latoza-2010-reach} are pushing the already-elusive goal of
 enabling developers to more easily enderstand their code into new and 
-uncharted territories. However, this is not an impossible goal.
+uncharted territories.
 
 \section{Questions that Developers Ask}
 \label{sec:QuestionsThatDeveloperAsk}
@@ -43,8 +43,8 @@ that require the integration of often-disparate sources of information
 \cite{fritz-2010-info-frag}.
 For example, to understand how a defect was introduced, a developer may have to
 read the source code of a program, find additional context within a bug report
-or a project tracker, or resort to speaking to other developers who may have 
-more information. 
+or a project tracker, or (in the worst case) resort to speaking to other 
+developers who may have more information. 
 
 \par Other questions that developers may ask are more focused, and may involve
 querying only one source of information, such as a single program or a
@@ -54,11 +54,30 @@ they may ask themselves: "where are instances of this class created?" or
 "what data can we access from this object?" as they try to discover entities
 and relationships that capture incoming connections to a given entity
 \cite{sillito-2006-questions-during-task}.
-Additional questions that developers may ask could be related to 
+Additional questions that developers may ask may be related to 
 the control-flow or the data-flow through a program, such as 
 "why isn't control reaching this point in code?" and 
 "what parts of this data structure are being accessed in this code?" 
 \cite{sillito-2006-questions-during-task}.
+These are questions that commonly arise as developers perform change tasks
+on their code.
+
+\par Researchers have conducted studies that investigate both the 
+\emph{frequency} and \emph{difficulty} of these focused questions that 
+developers ask during change tasks. 
+LaToza et al. found that a significant portion of a developer's work involves 
+answering \emph{reachability questions}, which are defined as a search across 
+feasible paths through a program for target statements matching search criteria 
+\cite{latoza-2010-reach}.
+
+\section{Tools that Support Developer Questions}
+\label{sec:ToolsSupportDeveloperQuestions}
 
 \endinput
 
+Sillito paper shows that developers often select the incorrect tool/are not
+aware of the tools they should use to find out answers to these questions.
+
+For `Tools that Support Developer Questions`
+
+  * Talk about Whyline, Get Me Here (MSR), etc...
